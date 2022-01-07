@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "-": "^0.0.1",
     "bs-stepper": "^1.7.0",
+    "mdb-cli": "^3.7.3",
     "mdbootstrap": "^4.20.0"
   }
 }
