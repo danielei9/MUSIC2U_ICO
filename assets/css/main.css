@@ -738,6 +738,7 @@ input, select, textarea {
 			background-color: transparent;
 			border: solid 2px #e5e6e7;
 			color: inherit;
+			height: 150px !important;
 		}
 
 			input[type="button"].style2:hover,

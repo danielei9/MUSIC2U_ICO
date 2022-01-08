@@ -1,10 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html style="   overflow-x: hidden; ">
+<html style="overflow-x: hidden; ">
 
 <head>
 	<title>M2U</title>
@@ -25,8 +20,411 @@
 	<link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.css">
 
 </head>
-<!--CHARTS-->>
+<!--CHARTS-->
 <style>
+	@import "https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: #f9f9f9;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, arial, tahoma, verdana;
+  line-height: 20px;
+  font-size: 14px;
+  color: #726f77;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Dosis", arial, tahoma, verdana;
+  font-weight: 500;
+}
+
+.project-name {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.success {
+  background: #78AD42 !important;
+}
+
+.timeline-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#timeline .timeline-item:after, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 20px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#timeline:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #1C71A4;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+#timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+#timeline .timeline-item .timeline-icon {
+  background: #1C71A4;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#timeline .timeline-item .timeline-icon svg, #timeline .timeline-item .timeline-icon .fa {
+  position: relative;
+  top: 13px;
+  left: 14px;
+  font-size: 24px;
+  color: #fff;
+}
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#timeline .timeline-item .timeline-content h2 {
+  padding: 15px;
+  background: #1C71A4;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+  font-weight: 300;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  font-size: 22px;
+}
+#timeline .timeline-item .timeline-content p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#timeline .timeline-item .timeline-content:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #1C71A4;
+}
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+}
+#timeline .timeline-item .timeline-content.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #1C71A4;
+}
+
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+  }
+  #timeline:before {
+    left: 0;
+  }
+  #timeline .timeline-item .timeline-content {
+    width: 90%;
+    float: right;
+  }
+  #timeline .timeline-item .timeline-content:before, #timeline .timeline-item .timeline-content.right:before {
+    left: 10%;
+    margin-left: -6px;
+    border-left: 0;
+    border-right: 7px solid #1C71A4;
+  }
+  #timeline .timeline-item .timeline-icon {
+    left: 0;
+  }
+}
+
+
+/* Animation CSS */
+
+/* icon animation */
+.timeline-icon.is-hidden {
+  visibility: hidden;
+}
+.timeline-icon.animate-it {
+  visibility: visible;
+   -webkit-animation: bounce-1 0.6s;
+   -moz-animation: bounce-1 0.6s;
+    animation: bounce-1 0.6s;
+}
+
+/* content block animation */
+.timeline-content.is-hidden {
+  visibility: hidden;
+}
+.timeline-content.animate-it {
+  visibility: visible;
+   -webkit-animation: bounce-2 0.6s;
+   -moz-animation: bounce-2 0.6s;
+    animation: bounce-2 0.6s;
+  }
+@media only screen and (min-width: 769px) {
+  /* Inverse bounce effect on even content blocks */
+.timeline-content.right.animate-it {
+    -webkit-animation: bounce-2-inverse 0.6s;
+    -moz-animation: bounce-2-inverse 0.6s;
+    animation: bounce-2-inverse 0.6s;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* Inverse bounce effect on all content blocks */
+.timeline-content.animate-it, .timeline-content.right.animate-it {
+    -webkit-animation: bounce-2-inverse 0.6s;
+    -moz-animation: bounce-2-inverse 0.6s;
+    animation: bounce-2-inverse 0.6s;
+  }
+}
+
+/* ALL animation types called */
+
+@-webkit-keyframes bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes bounce-1 {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@keyframes bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes bounce-2 {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@-moz-keyframes bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-20px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
+@keyframes bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 </style>
 <!-- STYLE STEPTS-->
 <style>
@@ -193,7 +591,6 @@
 		margin-right: 20px;
 	}
 </style>
-<!-- -->
 
 <style>
 	/*img */
@@ -218,9 +615,11 @@
 		#logo {
 			width: 30px;
 		}
+
 		#logoBig {
-		max-width: 20rem;
-	}
+			max-width: 20rem;
+		}
+
 		#progress-prev {
 			margin-right: 4rem;
 		}
@@ -255,7 +654,7 @@
 <body class="is-preload" style="padding-top: 0em;">
 	<!-- Header -->
 	<header id="header">
-		<img id="logo" class="magictime puffIn" src="images/Logo.png" alt="logo M2U" width="50" style="margin:8px">
+		<img id="logo" class="magictime puffIn" src="images/navbarLogo.png" alt="logo M2U" width="50" style="margin:8px">
 		<nav>
 			<ul>
 				<li><a href="#intro">Home</a></li>
@@ -327,52 +726,228 @@
 		</div>
 		<a href="#work" class="button style2 down anchored">Next</a>
 	</section>
-	<div class="row" style="padding: 40px;">
-		<div class="text-center" style="width: 100%;">
-			<h2 class="h1-responsive font-weight-bold my-5">Why is it so great?</h2>
-			<p class="lead grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
-				elit,
-				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	<!-- Section: Features v.3 -->
+<section class="main style1  fullscreen" style="flex-direction: column;">
+
+	<!-- Section heading -->
+	<h2 class="h1-responsive font-weight-bold text-center my-5">Why is it so great?</h2>
+	<!-- Section description -->
+	<p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+	  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+	  veniam.</p>
+  
+	<!-- Grid row -->
+	<div class="row">
+  
+	  <!-- Grid column -->
+	  <div class="col-lg-5 text-center text-lg-left">
+		<img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.webp" alt="Sample image">
+	  </div>
+	  <!-- Grid column -->
+  
+	  <!-- Grid column -->
+	  <div class="col-lg-7">
+  
+		<!-- Grid row -->
+		<div class="row mb-3">
+  
+		  <!-- Grid column -->
+		  <div class="col-1">
+			<i class="fas fa-share fa-lg indigo-text"></i>
+		  </div>
+		  <!-- Grid column -->
+  
+		  <!-- Grid column -->
+		  <div class="col-xl-10 col-md-11 col-10">
+			<h5 class="font-weight-bold mb-3">Safety</h5>
+			<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+			  quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+		  </div>
+		  <!-- Grid column -->
+  
 		</div>
-		<div class="content row">
+		<!-- Grid row -->
+  
+		<!-- Grid row -->
+		<div class="row mb-3">
+  
+		  <!-- Grid column -->
+		  <div class="col-1">
+			<i class="fas fa-share fa-lg indigo-text"></i>
+		  </div>
+		  <!-- Grid column -->
+  
+		  <!-- Grid column -->
+		  <div class="col-xl-10 col-md-11 col-10">
+			<h5 class="font-weight-bold mb-3">Technology</h5>
+			<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima veniam,
+			  quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+		  </div>
+		  <!-- Grid column -->
+  
+		</div>
+		<!-- Grid row -->
+  
+		<!--Grid row-->
+		<div class="row">
+  
+		  <!-- Grid column -->
+		  <div class="col-1">
+			<i class="fas fa-share fa-lg indigo-text"></i>
+		  </div>
+		  <!-- Grid column -->
+  
+		  <!-- Grid column -->
+		  <div class="col-xl-10 col-md-11 col-10">
+			<h5 class="font-weight-bold mb-3">Finance</h5>
+			<p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
+			  veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.</p>
+		  </div>
+		  <!-- Grid column -->
+  
+		</div>
+		<!--Grid row-->
+  
+	  </div>
+	  <!--Grid column-->
+  
+	</div>
+	<!-- Grid row -->
+  
+  </section>
+  <!-- Section: Features v.3 -->
+	<!-- grph -->
+
+	<div class="row" style="padding: 40px;     /*background: #212121; color:whitesmoke*/">
+	
+		<div class="text-center" style="width: 100%;">
+			<h2 class="h1-responsive font-weight-bold my-5">ICO M2U TOKEN DISTRIBUTION</h2>	
+		</div>
+		<div class=" row responsive">
 			<div id="divCnv" class="col-md-8" style="align-self: center;">
 				<canvas id="pieChart" class="mt-4 chartjs-render-monitor"
-					style="display: block;height: 535px;margin-top: 0px !important; width: 100%;" width="1500"
+					style="display: block;height: 535px;margin-top: 0px !important; width: 100%;max-width: 880px !important;" width="1000"
 					height="700"></canvas>
 			</div>
-			<div class="col-md-4">
-				<section class="text-center my-5">
+			<div class="col-md-4" style="padding: 40px;">
+					<section class="md-4 colum "style="text-align: center;" >
+						<div class="alert alert-info"><h5 class="font-weight-bold" >Circulating Supply Users</h5></div>
+						<div class="alert alert-info "><h5 class="font-weight-bold ">Locked ICO Users</h5></div>
+						<div class="alert alert-info "><h5 class="font-weight-bold">App Development</h5></div>
+						<div class="alert alert-info"><h5 class="font-weight-bold ">Marketing</h5></div>
+						<div class="alert alert-info"><h5 class="font-weight-bold ">Airdrops</h5></div>
+					
 
-					<section class="md-4 colum">
-						<mdb-icon icon="chart-area" size="3x" class="red-text" />
-						<h5 class="font-weight-bold my-4">Analytics</h5>
-						<p class="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
+						<p class="grey-text mb-md-0 mb-5">Este es el reparto de coins inicial para el crowsfunding y como lo vamos a llevar.</p>
 					</section>
-					<section class="md-4 colum">
-						<mdb-icon icon="book" size="3x" class="cyan-text" />
-						<h5 class="font-weight-bold my-4">Tutorials</h5>
-						<p class="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
-					</section>
-
-					<section class="md-4 colum">
-						<mdb-icon far icon="comments" size="3x" class="orange-text" />
-						<h5 class="font-weight-bold my-4">Support</h5>
-						<p class="grey-text mb-md-0 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-							Reprehenderit maiores aperiam minima assumenda deleniti hic.</p>
-					</section>
-
-				</section>
 			</div>
 		</div>
 	</div>
+	<!-- Roadmap --><div class="timeline-container">
+  <h1 class="project-name">Responive Animated Timeline</h1> 
+  <div id="timeline">
 
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>The email was sent to the user</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+          </p>
+          <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content right">
+          <h2>The email was delivered to the user</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur.
+          </p>
+          <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon success">
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>Quick Trial generation finished</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+          </p>
+           <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+        </div>
+      </div>
+
+       <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-check-square-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content right">
+          <h2>Marketo Syncronization</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+          </p>
+           <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+        </div>
+      </div>
+
+    <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>Application Licenses</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+          </p>
+           <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+        </div>
+  </div>
+
+       <div class="timeline-item right">
+        <div class="timeline-icon">
+          <i class="fa fa-key" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content right">
+          <h2>Application Download Key</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+          </p>
+           <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+        </div>
+      </div>
+
+        <div class="timeline-item">
+        <div class="timeline-icon success">
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2>Quick Trial Generation Started</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+          </p>
+           <span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
+        </div>
+      </div>
+
+  </div>
+  </div>
 
 	<!--Section: Block Content-->
 	<!-- Work -->
 	<section id="work" class="main style3 primary" style="background: #f5f6f7;padding: 20px;" style="padding: 0px;">
+		
 		<div class="content">
+			
 			<header>
 				<h2 class="mt-3">Adquirir tokens</h2>
 			</header>
@@ -557,7 +1132,36 @@
 	<!--charts-->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
+<script>
+	
+$(function() {
+	var timelineBlocks = $('.timeline-item'),
+		offset = 0.8;
 
+	//hide timeline blocks which are outside the viewport
+	hideBlocks(timelineBlocks, offset);
+
+	//on scolling, show/animate timeline blocks when entering the viewport
+	$(window).on('scroll', function(){
+		(!window.requestAnimationFrame) 
+			? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+			: window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+	});
+
+	function hideBlocks(blocks, offset) {
+		blocks.each(function(){
+		    ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) && $(this).find('.timeline-icon, .timeline-content').addClass('is-hidden');
+		});
+	}
+
+	function showBlocks(blocks, offset) {
+		blocks.each(function(){
+		    ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-icon').hasClass('is-hidden')) && $(this).find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('animate-it');
+
+		});
+	}
+});
+</script>
 	<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
 	<script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
@@ -590,8 +1194,8 @@
 				labels: ["Circulating Supply", "LockedTokens", "APP-DEVELOPMENT-ISSUANCE", "MARKETING-ISSUANCE", "ISSUANCE - airdrops"],
 				datasets: [{
 					data: [circulating, lockedTokens, appDev, marketing, airdrops],
-					backgroundColor: ["#ffff26", "#CACA1D", "#949413", "#5F5F0A ", "#292900"],
-					hoverBackgroundColor: ["#a34cb3", "#a85076", "#bdbd13", "#9c9c0a", "#28a89b"],
+					hoverBackgroundColor: ["#ffff26", "#CACA1D", "#949413", "#5F5F0A ", "#292900"],
+					backgroundColor: ["#3E92CC", "#3774A1", "#305675", "#28384A ", "#211A1E"],
 					borderWidth: 4,
 					borderColor: '#eee'
 				}]
@@ -599,7 +1203,7 @@
 			options: {
 				responsive: true,
 				legend: {
-					position: 'bottom',
+					position: '', //bottom
 					labels: {
 						padding: 5,
 						boxWidth: 10
@@ -677,7 +1281,6 @@
 			}
 		});
 		$("#progress-next").click(function () {
-			console.log("HOla")
 			if (count < imgsTutorial.length - 1) {
 				count++
 				console.log(count)
@@ -692,7 +1295,56 @@
 	</script>
 	<!-- Scripts -->
 
+	<script>
 
+		/*
+				function myFunction() {
+					const selector = document.querySelector('#logoBig')
+					selector.classList.add('magictime', 'puffIn')
+				}
+				setTimeout(myFunction, 5000);
+		*/
+		var threeOrgOffset = $('#three').height(),
+			headerOrgOffset = $('#header').height(), workOrgOffset = $('#work').height(), introOrgOffset = $('#intro').height(), oneOrgOffset = $('#one').height(), twoOrgOffset = $('#two').height();
+		$(window).scroll(function () {
+			var currentScroll = $(this).scrollTop();
+			let header_sectionOne = headerOrgOffset + oneOrgOffset;
+			let header_sectionTwo = header_sectionOne + twoOrgOffset;
+			let header_sectionThree = header_sectionTwo + threeOrgOffset;
+			let header_sectionWork = header_sectionThree + workOrgOffset;
+			if (screen.width < 450) {
+				if (currentScroll >= 0 && currentScroll < headerOrgOffset + 200) {
+					$('#header').slideDown();
+				} else {
+					$('#header').slideUp();
+				}
+
+			}
+
+			else if (currentScroll > header_sectionOne - 100 && currentScroll < header_sectionOne + 200) {
+				$('#header').slideDown();
+			}
+			else if (currentScroll > header_sectionTwo - 100 && currentScroll < header_sectionTwo + 200) {
+				$('#header').slideDown();
+			}
+			else if (currentScroll > header_sectionThree - 100 && currentScroll < header_sectionThree + 200) {
+				$('#header').slideDown();
+				console.log("three ")
+				console.log("current " + currentScroll)
+				console.log("header_sectionThree " + header_sectionThree)
+			}
+			else if (currentScroll > header_sectionWork - 100 && currentScroll < header_sectionWork) {
+				$('#header').slideDown();
+				console.log("work")
+				console.log("header_sectionWork " + header_sectionWork)
+			} else {
+				$('#header').slideUp();
+				console.log("up")
+			}
+		}
+		);
+
+	</script>
 </body>
 
 </html>
