@@ -1,0 +1,70 @@
+/*img */
+.responsive-img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+#header {
+
+    background: #ffff26 !important;
+    background-size: 400% 400%;
+    animation: BackgroundGradient 15s ease infinite;
+}
+
+#logoBig {
+    max-width: 30rem;
+}
+
+@media screen and (max-width: 736px) {
+.li-mr-3{
+    margin: auto;
+}
+    #div-steps {
+        flex-direction: column;
+    }
+
+
+    #logoBig {
+        max-width: 20rem;
+    }
+
+    #progress-prev {
+        margin-right: 1rem;
+    }
+    .stepsList{
+        padding-right: 0% !important;
+        padding-left: 0% !important;
+        padding-top: 24px !important;
+    }
+}
+
+@media screen and (min-width: 736px) {
+    .stepsList{
+        padding: 24px !important;
+    }
+    #div-steps {
+        flex-direction: row;
+    }
+    .li-mr-3{
+        margin-right: 3rem;
+    }
+}
+
+#logo:hover {
+    -webkit-animation: tiembla 0.2s 1;
+}
+
+@-webkit-keyframes tiembla {
+    0% {
+        -webkit-transform: rotateZ(-5deg);
+    }
+
+    50% {
+        -webkit-transform: rotateZ(0deg) scale(.8);
+    }
+
+    100% {
+        -webkit-transform: rotateZ(5deg);
+    }
+}

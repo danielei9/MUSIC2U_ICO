@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html style="overflow-x: hidden; scroll-behavior: smooth !important;">
+<html style="overflow-x: hidden; scroll-behavior: smooth;">
 <!-- Head -->
 
 <head>
@@ -7,7 +7,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="css/ourTeam.css" />
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/noscript.css" />
@@ -69,10 +68,12 @@
 
 <!-- body -->
 
-<body class="is-preload" style="padding-top: 0em;scroll-behavior: smooth !important;">
+<body class="is-preload" style="padding-top: 0em;">
 
 	<!-- Navbar -->
-	<nav id="nav_header" style=" background: #ffff26 !important; background-size: 400% 400%; animation:none !important;"
+	<nav id="nav_header" style=" background: #ffff26 !important;
+    background-size: 400% 400%;
+    animation: BackgroundGradient 15s ease infinite;"
 		class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
 		<div class="container">
 
@@ -91,33 +92,53 @@
 
 			<!-- Links -->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<style>
 
-				</style>
 				<!-- Left -->
-				<ul class="navbar-nav mx-auto" style="text-align: center;">
-					<li class="nav-item li-mr-3">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
 						<a class="nav-link waves-effect" href="#">Home
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
-					<li class="nav-item li-mr-3">
-						<a class="nav-link waves-effect" href="#one">About M2U</a>
-					</li>
-					<li class="nav-item  li-mr-3">
-						<a class="nav-link waves-effect" href="#two">Artist</a>
+					<li class="nav-item">
+						<a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/"
+							target="_blank">About MDB</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link waves-effect" href="#three">Fans</a>
+						<a class="nav-link waves-effect"
+							href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free
+							download</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/"
+							target="_blank">Free
+							tutorials</a>
 					</li>
 				</ul>
 
 				<!-- Right -->
 				<ul class="navbar-nav nav-flex-icons">
 					<li class="nav-item">
-						<a href="comingSoon/comingSoon.html" class="nav-link border border-light rounded waves-effect"
-							target="_blank" style="color:white;background: #e83e8c;">
-							<i class="fas fa-desktop mr-2"></i>Join M2U (Comming)
+						<a class="nav-link waves-effect">
+							<span class="badge red z-depth-1 mr-1"> 1 </span>
+							<i class="fas fa-shopping-cart"></i>
+							<span class="clearfix d-none d-sm-inline-block"> Cart </span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://github.com/mdbootstrap/bootstrap-material-design"
+							class="nav-link border border-light rounded waves-effect" target="_blank">
+							<i class="fab fa-github mr-2"></i>MDB GitHub
 						</a>
 					</li>
 				</ul>
@@ -224,7 +245,7 @@
 					and wining in the art world.
 					aspires to become the world’s leading Music/Art Platform in the music industry by the end of 2023.
 				</h4>
-				<div style="max-width: 70%;	margin: auto;">
+				<div class="">
 					<!-- Grid row -->
 					<div class="row mb-3">
 
@@ -377,7 +398,7 @@
 
 	<!-- Roadmap -->
 	<div class="timeline-container" id="roadmap" style="margin-top: 3rem;">
-		<h1 class="project-name" style="padding-top: 4rem;">Responive Animated Timeline</h1>
+		<h1 class="project-name">Responive Animated Timeline</h1>
 		<div id="timeline">
 
 			<div class="timeline-item">
@@ -482,100 +503,90 @@
 					<span class="time-stamp">Thu Jan - 26 - 2017 01:54</span>
 				</div>
 			</div>
-			<a href="#getToken" class="button style2 down anchored none_mobile"
-				style="background-color: #f9f9f9;">Next</a>
-
+			<a href="#getToken" class="button style2 down anchored none_mobile">Next</a>
 		</div>
-
-
 
 	</div>
 	<!-- Roadmap -->
 
 	<!--Section: GET TOKEN-->
-	<section class="main style1  fullscreen" id="getToken" style="flex-direction: column;">
+	<section id="getToken" class="main style3 primary"
+		style="background: #f5f6f7;padding: 20px; place-content: center; padding: 0px;">
 
-		<div class="container" style="height: 100%;">
+		<div class="container">
 			<header>
-				<h2 class="mt-3" style="padding:3rem">Adquirir tokens</h2>
+				<h2 class="mt-3">Adquirir tokens</h2>
 			</header>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum in quam, consequuntur illum ab sed
-				numquam atque pariatur saepe fuga. Exercitationem a autem laboriosam tempora? Officiis, quaerat quod!
-				Voluptas, ipsum?
-			</p>
-			<div style="background: white;">
-				<div class="content" style="padding:20px">
 
-					<div class="box" style="padding: 0;background: none;">
+			<div class="content">
 
-						<div class="mdl-card mdl-shadow--2dp" style="width: 100%;">
-							<div class="mdl-card__supporting-text">
-								<div class="mdl-stepper-horizontal-alternative">
-									<div id="step1" class="mdl-stepper-step step-done active-step stepsList">
-										<div class="mdl-stepper-circle"><span>1</span></div>
-										<div class="mdl-stepper-title">Add pets</div>
-										<div class="mdl-stepper-bar-left"></div>
-										<div class="mdl-stepper-bar-right"></div>
-									</div>
-									<div id="step2" class="mdl-stepper-step editable-step stepsList">
-										<div class="mdl-stepper-circle"><span>2</span></div>
-										<div class="mdl-stepper-title">Set location</div>
-										<div class="mdl-stepper-optional">Optional</div>
-										<div class="mdl-stepper-bar-left"></div>
-										<div class="mdl-stepper-bar-right"></div>
-									</div>
-									<div id="step3" class="mdl-stepper-step stepsList">
-										<div class="mdl-stepper-circle"><span>3</span></div>
-										<div class="mdl-stepper-title">Invite friends</div>
-										<div class="mdl-stepper-optional">Optional</div>
-										<div class="mdl-stepper-bar-left"></div>
-										<div class="mdl-stepper-bar-right"></div>
-									</div>
-									<div id="step4" class="mdl-stepper-step stepsList">
-										<div class="mdl-stepper-circle"><span>4</span></div>
-										<div class="mdl-stepper-title">Share</div>
-										<div class="mdl-stepper-optional">Optional</div>
-										<div class="mdl-stepper-bar-left"></div>
-										<div class="mdl-stepper-bar-right"></div>
-									</div>
-									<div id="step5" class="mdl-stepper-step stepsList">
-										<div class="mdl-stepper-circle"><span>5</span></div>
-										<div class="mdl-stepper-title">Share</div>
-										<div class="mdl-stepper-optional">Optional</div>
-										<div class="mdl-stepper-bar-left"></div>
-										<div class="mdl-stepper-bar-right"></div>
-									</div>
+				<div class="box" style="padding: 0;background: none;">
+
+					<div class="mdl-card mdl-shadow--2dp" style="width: 100%;">
+						<div class="mdl-card__supporting-text">
+							<div class="mdl-stepper-horizontal-alternative">
+								<div id="step1" class="mdl-stepper-step step-done active-step">
+									<div class="mdl-stepper-circle"><span>1</span></div>
+									<div class="mdl-stepper-title">Add pets</div>
+									<div class="mdl-stepper-bar-left"></div>
+									<div class="mdl-stepper-bar-right"></div>
+								</div>
+								<div id="step2" class="mdl-stepper-step editable-step">
+									<div class="mdl-stepper-circle"><span>2</span></div>
+									<div class="mdl-stepper-title">Set location</div>
+									<div class="mdl-stepper-optional">Optional</div>
+									<div class="mdl-stepper-bar-left"></div>
+									<div class="mdl-stepper-bar-right"></div>
+								</div>
+								<div id="step3" class="mdl-stepper-step">
+									<div class="mdl-stepper-circle"><span>3</span></div>
+									<div class="mdl-stepper-title">Invite friends</div>
+									<div class="mdl-stepper-optional">Optional</div>
+									<div class="mdl-stepper-bar-left"></div>
+									<div class="mdl-stepper-bar-right"></div>
+								</div>
+								<div id="step4" class="mdl-stepper-step">
+									<div class="mdl-stepper-circle"><span>4</span></div>
+									<div class="mdl-stepper-title">Share</div>
+									<div class="mdl-stepper-optional">Optional</div>
+									<div class="mdl-stepper-bar-left"></div>
+									<div class="mdl-stepper-bar-right"></div>
+								</div>
+								<div id="step5" class="mdl-stepper-step">
+									<div class="mdl-stepper-circle"><span>5</span></div>
+									<div class="mdl-stepper-title">Share</div>
+									<div class="mdl-stepper-optional">Optional</div>
+									<div class="mdl-stepper-bar-left"></div>
+									<div class="mdl-stepper-bar-right"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="row" id="div-steps" style="">
-					<div class="col">
+			<div class="row" id="div-steps" style="">
+				<div class="col">
 
-						<img id="box_img" class="responsive-img" width="700" src="images/steps/1.png" alt=""
-							style="align-self: center; margin-right: 3rem;">
-					</div>
-					<div class="col" style="align-self: center;">
+					<img id="box_img" class="responsive-img" width="700" src="images/steps/1.png" alt=""
+						style="align-self: center; margin-right: 3rem;">
+				</div>
+				<div class="col" style="align-self: center;">
 
-						<h4 id="box_h3">PASO 1 MetaMask:</h4>
-						<p id="box_p">Metamask es una aplicación la cual nos facilita crear una wallet de criptomonedas.
-							También
-							nos permite conectarnos a otras redes compatibles como BSC o Polygon
-							su web oficial <a href=" https://metamask.io/">MetaMask</a> para instalarlo</p>
-						<button id="progress-prev" class="btn" style="background-color: #ffff26;	color: #000;"
-							disabled>Prev</button>
-						<button id="progress-next" class="btn"
-							style="background-color: #ffff26;	color: #000;">Next</button>
-
-					</div>
+					<h4 id="box_h3">PASO 1 MetaMask:</h4>
+					<p id="box_p">Metamask es una aplicación la cual nos facilita crear una wallet de criptomonedas.
+						También
+						nos permite conectarnos a otras redes compatibles como BSC o Polygon
+						su web oficial <a href=" https://metamask.io/">MetaMask</a> para instalarlo</p>
+					<button id="progress-prev" class="btn" style="background-color: #ffff26;	color: #000;"
+						disabled>Prev</button>
+					<button id="progress-next" class="btn" style="background-color: #ffff26;	color: #000;">Next</button>
 
 				</div>
+
 			</div>
 		</div>
-		<a href="#team" class="button style2 down anchored none_mobile" style="background-color: #f9f9f9;">Next</a>
+		<a href="#team" class="button style2 down anchored none_mobile">Next</a>
 
 	</section>
 	<!--//Section: GET TOKEN-->
@@ -583,146 +594,91 @@
 
 	<!--Section: TEAM-->
 
-	<section class="main style1  fullscreen" id="team" style="flex-direction: column;">
+	<div class="container my-5">
 
 		<!--Section: Content-->
+		<section id="team" class="text-center dark-grey-text">
 
-		<!-- Section heading -->
-		<header>
-			<h2 class="mt-3" style="padding:3rem">Our team</h2>
-		</header>
-		<!-- Section description -->
-		<p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-			eum porro a pariatur veniam.</p>
+			<!-- Section heading -->
+			<h3 class="font-weight-bold pb-2 mb-4">Our amazing team</h3>
+			<!-- Section description -->
+			<p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+				eum porro a pariatur veniam.</p>
 
-		<!-- Grid row -->
-		<div class="row" style="justify-content: center;">
-			<!-- Team member -->
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="image-flip">
-					<div class="mainflip flip-0">
-						<div class="frontside">
-							<div class="card">
-								<div class="card-body text-center">
-									<p><img class=" img-fluid"
-											src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29uYXN8ZW58MHx8MHx8&w=1000&q=80"
-											alt="card image"></p>
-									<h4 class="card-title">Sunlimetech</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.</p>
-									<a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
-											class="fa fa-plus"></i></a>
+			<!-- Grid row -->
+			<div class="row" style="justify-content: center;">
+
+				<!-- Grid column -->
+				<div class="col-lg-4 col-md-12 mb-4">
+
+					<!-- Rotating card -->
+					<div class="card-wrapper">
+						<div id="card-1" class="card card-rotating text-center">
+							<!-- Front Side -->
+							<div class="face front">
+								<!-- Image -->
+								<div class="card-up">
+									<img class="card-img-top"
+										src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg"
+										alt="Team member card image">
+								</div>
+								<!-- Avatar -->
+								<div class="avatar mx-auto white">
+									<img src="https://mdbootstrap.com/img/Photos/Avatars/img(10).jpg"
+										class="rounded-circle img-fluid" alt="First sample avatar image">
+								</div>
+								<!-- Content -->
+								<div class="card-body">
+									<h4 class="font-weight-bold mt-1 mb-3">Maria Kate</h4>
+									<p class="font-weight-bold dark-grey-text">Photographer</p>
 								</div>
 							</div>
-						</div>
-						<div class="backside">
-							<div class="card">
-								<div class="card-body text-center mt-4">
-									<h4 class="card-title">Sunlimetech</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.This is basic card with image on top, title, description and button.This
-										is basic card with image on top, title, description and button.</p>
-									<ul class="list-inline">
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-facebook"></i>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-twitter"></i>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-skype"></i>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-google"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+							<!-- Front Side -->
+
 						</div>
 					</div>
+					<!-- Rotating card -->
+
 				</div>
-			</div>
-			<!-- ./Team member -->
-			<!-- Team member -->
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				<div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-					<div class="mainflip">
-						<div class="frontside">
-							<div class="card">
-								<div class="card-body text-center">
-									<img class="img-fluid"
-											src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cGVyc29uYXN8ZW58MHx8MHx8&w=1000&q=80"
-											alt="card image">
-									<h4 class="card-title">Sunlimetech</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.</p>
-									<a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
-											class="fa fa-plus"></i></a>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-lg-4 col-md-12 mb-4">
+					<!-- Rotating card -->
+					<div class="card-wrapper">
+						<div id="card-3" class="card card-rotating text-center">
+							<!-- Front Side -->
+							<div class="face front">
+								<!-- Image -->
+								<div class="card-up">
+									<img class="card-img-top"
+										src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(14).jpg"
+										alt="Team member card image">
+								</div>
+								<!-- Avatar -->
+								<div class="avatar mx-auto white">
+									<img src="https://mdbootstrap.com/img/Photos/Avatars/img(8).jpg"
+										class="rounded-circle img-fluid" alt="Third sample avatar image">
+								</div>
+								<!-- Content -->
+								<div class="card-body">
+									<h4 class="font-weight-bold mt-1 mb-3">John Doe</h4>
+									<p class="font-weight-bold dark-grey-text">Front-end Developer</p>
 								</div>
 							</div>
-						</div>
-						<div class="backside">
-							<div class="card">
-								<div class="card-body text-center mt-4">
-									<h4 class="card-title">Sunlimetech</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.This is basic card with image on top, title, description and button.This
-										is basic card with image on top, title, description and button.</p>
-									<ul class="list-inline">
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-facebook"></i>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-twitter"></i>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-skype"></i>
-											</a>
-										</li>
-										<li class="list-inline-item">
-											<a class="social-icon text-xs-center" target="_blank"
-												href="https://www.fiverr.com/share/qb8D02">
-												<i class="fa fa-google"></i>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+							<!-- Front Side -->
+
 						</div>
 					</div>
+					<!-- Rotating card -->
 				</div>
+				<!-- Grid column -->
+
 			</div>
-			<!-- ./Team member -->
+		</section>
 
-
-			<!-- Rotating card -->
-		</div>
-		<!-- Grid column -->
-
-		</div>
-	</section>
-
+	</div>
 	<!--Section: TEAM-->
 
 	<!-- Contact -->
@@ -789,9 +745,9 @@
 	<!-- Scripts Animation -->
 	<script type="text/javascript" src="node_modules/mdbootstrap/js/popper.js"></script>
 	<script type="text/javascript" src="node_modules/mdbootstrap/js/modules/animations-extended.min.js"></script>
-	<script type="text/javascript" src="node_modules/mdbootstrap/js/modules/wow.min.js"></script>
+	<script type="text/javascript"  src="node_modules/mdbootstrap/js/modules/wow.min.js"></script>
 	<!-- Scripts timeline -->
-	<script type="text/javascript" src="js/timeline.js"></script>
+	<script type="text/javascript"  src="js/timeline.js"></script>
 
 	<!-- Scripts header -->
 	<script type="text/javascript" src="js/navShow.js"></script>
