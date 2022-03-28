@@ -14,9 +14,9 @@
 				labels: ["Circulating Supply", "LockedTokens", "APP-DEVELOPMENT-ISSUANCE", "MARKETING-ISSUANCE", "ISSUANCE - airdrops"],
 				datasets: [{
 					data: [circulating, lockedTokens, appDev, marketing, airdrops],
-					hoverBackgroundColor: ["#ffff26", "#CACA1D", "#949413", "#5F5F0A ", "#292900"],
-					backgroundColor: ["#3E92CC", "#3774A1", "#305675", "#28384A ", "#211A1E"],
-					borderWidth: 4,
+					hoverBackgroundColor: ["#f8f3f2", "#f8f3f2", "#f8f3f2", "#f8f3f2 ", "#f8f3f2"],
+					backgroundColor: ["#ff807d", "#ff40a9", "#ff00d4", "#ffff26 ", "#ffbf52"],
+					borderWidth: 0,
 					borderColor: '#eee'
 				}]
 			},
