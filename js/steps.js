@@ -1,6 +1,6 @@
 // Scripts steps bar 
 
-var title = ["STEP Descargar e instalar Metamask", "STEP1.1 Set Up Metamask", "STEP1.2 create Password", "STEP1.3 Save Secret Backup Phrase", "STEP1.4 Confirm your secret Backupo phrase", "STEP2.0 ADD Network block-chain", "STEP2.1 go to settings", "STEP2.2 configure network", "STEP2 Done", "STEP3.0 Send some coins to your wallet ( binance example)", "STEP4.0 Pancake Swap", "STEP4.1 Get your M2U Coins"];
+var title = ["STEP Descargar e instalar Metamask", "STEP1.1 Configura Metamask", "STEP1.2 create Password", "STEP1.3 Save Secret Backup Phrase", "STEP1.4 Confirm your secret Backupo phrase", "STEP2.0 ADD Network block-chain", "STEP2.1 go to settings", "STEP2.2 configure network", "STEP2 Done", "STEP3.0 Send some coins to your wallet ( binance example)", "STEP4.0 Pancake Swap", "STEP4.1 Get your M2U Coins"];
 var imgsTutorial = [
     "images/steps/1.png",
     "images/steps/2.png",

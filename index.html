@@ -33,6 +33,16 @@
 			transition: none !important;
 		}
 
+		.h1,
+		.h2,
+		.h3,
+		.h4,
+		.h5,
+		.h6 {
+			font-family: NeutralFace;
+			src: url("assets/webfonts/NeutralFace.otf") format("opentype") !important;
+		}
+
 		:root {
 			--blue: #007bff;
 			--indigo: #6610f2;
@@ -62,6 +72,11 @@
 			--breakpoint-xl: 1200px;
 			--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 			--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+		}
+
+		@font-face {
+			font-family: NeutralFace;
+			src: url("assets/webfonts/NeutralFace.otf") format("opentype");
 		}
 	</style>
 </head>
@@ -199,7 +214,7 @@
 	<section class="main style1  fullscreen" id="getIco" style="flex-direction: column;">
 
 		<!-- Section heading -->
-		<h2 class="h1-responsive font-weight-bold text-center my-5">¿POR QUÉ MUSIC2U?</h2>
+		<h2 class="h1-responsive text-center my-5">¿POR QUÉ MUSIC2U?</h2>
 		<!-- Section description -->
 
 
@@ -245,9 +260,9 @@
 								</g>
 							</svg>
 							<h5 class="font-weight-bold mb-3"> Safety</h5>
-							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
-								veniam,
-								quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+							<p class="grey-text">La seguridad es un apartado muy importante para nosotros, tenemos
+								revisiones de seguridad automatizadas y contamos con un equipo dedicado a ello que se
+								encargan de habilitar un espacio totalmente libre de amenazas.
 							</p>
 						</div>
 						<!-- Grid column -->
@@ -278,9 +293,7 @@
 								</g>
 							</svg>
 							<h5 class="font-weight-bold mb-3">Technology</h5>
-							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad minima
-								veniam,
-								quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda deleniti hic.
+							<p class="grey-text">Utilizamos nuevas tecnologias blockchain y apps interactivas.
 							</p>
 						</div>
 						<!-- Grid column -->
@@ -308,11 +321,8 @@
 								</g>
 							</svg>
 							<h5 class="font-weight-bold mb-3">Finance</h5>
-							<p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
-								minima
-								veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam assumenda
-								deleniti
-								hic.</p>
+							<p class="grey-text mb-0">Únete a nuestra propia economica criptográfica en la que nos
+								basamos para ofrecer nuestros servicios. </p>
 						</div>
 						<!-- Grid column -->
 
@@ -328,7 +338,6 @@
 
 	</section>
 	<!-- Section: Features -->
-	<hr class="mb-5">
 
 
 	<!-- grph -->
@@ -336,7 +345,7 @@
 		style="padding: 40px;     flex-direction: column; background: #211a1e; color:#f8f3f2">
 
 		<div class="text-center" style="width: 100%;">
-			<h2 class="h1-responsive font-weight-bold my-5" style="margin-top: 0 ;">ICO M2U TOKEN DISTRIBUTION</h2>
+			<h2 class="h1-responsive my-5" style="margin-top: 0 ;">ICO M2U TOKEN DISTRIBUTION</h2>
 		</div>
 		<div class=" row responsive">
 			<div id="divCnv" class="col-md-8" style="align-self: center;">
@@ -346,11 +355,11 @@
 			</div>
 			<div class="col-md-4" style="align-self: center;align-self: center;">
 				<section class="md-4 colum " style="text-align: center;">
-						<h5 class="font-weight-bold;"style="color:#ff807d">Circulating Supply Users</h5>
-						<h5 class="font-weight-bold;"style=" color:#ff40a9 ">Locked ICO Users</h5>
-						<h5 class="font-weight-bold;"style=" color:#ff00d4">App Development</h5>
-						<h5 class="font-weight-bold;"style=" color:#ffff26 ">Marketing</h5>
-						<h5 class="font-weight-bold; "style="color:#ffbf52 ">Airdrops</h5>
+					<h5 class="font-weight-bold;" style="color:#ff807d">Circulating Supply Users</h5>
+					<h5 class="font-weight-bold;" style=" color:#ff40a9 ">Locked ICO Users</h5>
+					<h5 class="font-weight-bold;" style=" color:#ff00d4">App Development</h5>
+					<h5 class="font-weight-bold;" style=" color:#ffff26 ">Marketing</h5>
+					<h5 class="font-weight-bold; " style="color:#ffbf52 ">Airdrops</h5>
 					<p class="grey-text mb-md-0 mb-5">Este es el reparto de coins inicial para el crowsfunding y como lo
 						vamos a llevar.</p>
 				</section>
@@ -360,12 +369,10 @@
 
 	</div>
 	<!-- grph -->
-	<hr class="mb-5">
-
 	<!-- Roadmap -->
 	<div class="timeline-container" id="roadmap" style="margin-top: 3rem;">
-		<h1 class="project-name" style="padding-top: 4rem;">ROADMAP</h1>
-		<div id="timeline">
+		<h1 class="project-name" style="padding-top: 4rem;margin-bottom: 2rem;">ROADMAP</h1>
+		<div id="timeline" style="margin:0px !important">
 
 
 			<div class="timeline-item">
@@ -373,9 +380,9 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 				</div>
 				<div class="timeline-content">
-					<h2> WEB, SOCIALS - Febraury 2022</h2>
+					<h2>Febrero 2022</h2>
 					<p>
-						Web and Socials Launched
+						Web y redes sociales
 					</p>
 				</div>
 			</div>
@@ -385,9 +392,9 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 				</div>
 				<div class="timeline-content right">
-					<h2> CrowsFunding Crypto - March 2022</h2>
+					<h2>Marzo 2022</h2>
 					<p>
-						Web-platform done as beta version. And working.
+						Versión beta de plataforma web para CrowdFunding Crypto acabada y en funcionamiento.
 					</p>
 				</div>
 			</div>
@@ -397,9 +404,9 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 				</div>
 				<div class="timeline-content">
-					<h2> WEB PLATFORM Beta - June 2022</h2>
+					<h2>Junio 2022</h2>
 					<p>
-						Web-platform done as beta version. And working.
+						Versión beta de plataforma web de MUSIC2U acabada y en funcionamiento.
 					</p>
 				</div>
 			</div>
@@ -409,9 +416,9 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 				</div>
 				<div class="timeline-content right">
-					<h2> APP Beta - August 2022</h2>
+					<h2>Agosto 2022</h2>
 					<p>
-						App done as beta version. And Working.
+						Versión beta de la App MUSIC2U acabada y en funcionamiento.
 					</p>
 				</div>
 			</div>
@@ -421,9 +428,9 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 				</div>
 				<div class="timeline-content ">
-					<h2> M2U SWAP FEATURE - September 2022</h2>
+					<h2>Septiembre 2022</h2>
 					<p>
-						M2U Coin swap feature DONE.
+						Característica de intercambio de moneda M2U acabada.
 					</p>
 				</div>
 			</div>
@@ -433,9 +440,9 @@
 					<i class="fa fa-star" aria-hidden="true"></i>
 				</div>
 				<div class="timeline-content right">
-					<h2>NFT Market - November 2022</h2>
+					<h2>Noviembre 2022</h2>
 					<p>
-						The marketplace for artist NFT DONE.
+						Marketplace para NFTs de artistas acabado.
 					</p>
 				</div>
 			</div>
@@ -445,27 +452,25 @@
 					<i class="fa fa-key" aria-hidden="true"></i>
 				</div>
 				<div class="timeline-content ">
-					<h2>LAUNCH ALL APPLICATION - JANUARY 2023</h2>
+					<h2>Enero 2023</h2>
 					<p>
-						All work finished and running the App and blockchains features.
+						Lanzamiento de App con características blockchain en funcionamiento.
 					</p>
 				</div>
 			</div>
-			<a href="#getToken" class="button style2 down anchored none_mobile"
-				style="background-color: #f9f9f9;">Next</a>
+			<a href="#getToken" class="button style2 down anchored none_mobile" style="background-color: #f9f9f9;">Next</a>
+
 
 		</div>
-		<hr class="mb-5">
+
 
 		<!-- Roadmap -->
 	</div>
-	</div>
-
 	<!-- Roadmap -->
 	<!--Section: Not enough-->
-	<section>
+	<section style="background: #211a1e;">
 
-		<h1 class="project-name" style="margin-bottom: 3rem;">Not enough?</h1>
+		<h1 class="project-name" style="margin-bottom: 3rem;">TODAVIA QUIERES MAS...?</h1>
 
 		<!--First row-->
 		<div class="row features-small mb-5 mt-3 wow fadeIn" style="padding-left: 5rem;padding-right: 5rem;">
@@ -602,6 +607,7 @@
 					</div>
 				</div>
 				<!--/Fourth row-->
+
 			</div>
 			<!--/Third column-->
 
@@ -617,7 +623,7 @@
 
 		<div class="container" style="height: 100%;">
 			<header>
-				<h2 class="mt-3" style="padding:3rem">Adquirir tokens</h2>
+				<h2 class="mt-3" style="padding:3rem">ADQUIRIR TOKENS</h2>
 			</header>
 			<p>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum in quam, consequuntur illum ab sed
@@ -703,18 +709,16 @@
 
 	<!--Section: TEAM-->
 
-	<section class="main style1  fullscreen" id="team" style="flex-direction: column;">
+	<section class="main style1  fullscreen" id="team" style="flex-direction: column;background: #211a1e;">
 
 		<!--Section: Content-->
 
 		<!-- Section heading -->
 		<header>
-			<h2 class="mt-3" style="padding:3rem">Our team</h2>
+			<h2 class="mt-3" style="padding:3rem">NUESTRO EQUIPO</h2>
 		</header>
 		<!-- Section description -->
-		<p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-			Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-			eum porro a pariatur veniam.</p>
+		<p class="text-muted w-responsive mx-auto mb-5">Os presentamos a nuestro equipo fundador de Music2U:</p>
 
 		<!-- Grid row -->
 		<div class="row" style="justify-content: center; padding-left: 4rem;padding-right: 4rem; ">
@@ -726,10 +730,11 @@
 					<div class="mainflip flip-0">
 						<div class="frontside">
 							<div class="card">
-								<img class=" img-fluid" src="images/tioexample.PNG" alt="card image">
+								<img style=" width: 300px; height: 300px; " class=" img-fluid"
+									src="images/team/danBur.PNG" alt="card image">
 								<div class="card-body text-center">
 									<h4 class="card-title">Daniel Burruchaga</h4>
-									<p class="card-text">Developer</p>
+									<p class="card-text">CEO</p>
 								</div>
 							</div>
 						</div>
@@ -737,9 +742,7 @@
 							<div class="card">
 								<div class="card-body text-center mt-4">
 									<h4 class="card-title">Daniel Burruchaga</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.This is basic card with image on top, title, description and button.This
-										is basic card with image on top, title, description and button.</p>
+									<p class="card-text">Representante, organizador y desarrollador.</p>
 								</div>
 							</div>
 						</div>
@@ -753,10 +756,11 @@
 					<div class="mainflip">
 						<div class="frontside">
 							<div class="card">
-								<img class="img-fluid" src="images/tioexample.PNG" alt="card image">
+								<img style=" width: 300px; height: 300px; " class=" img-fluid"
+									src="images/team/adri.PNG" alt="card image">
 								<div class="card-body text-center">
 									<h4 class="card-title">Adriana Ortolá</h4>
-									<p class="card-text">GraphicDesigner</p>
+									<p class="card-text">Diseñadora</p>
 								</div>
 							</div>
 						</div>
@@ -764,9 +768,7 @@
 							<div class="card">
 								<div class="card-body text-center mt-4">
 									<h4 class="card-title">Adriana Ortolá</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.This is basic card with image on top, title, description and button.This
-										is basic card with image on top, title, description and button.</p>
+									<p class="card-text">Directora de arte y diseño, organizadora de produccion.</p>
 								</div>
 							</div>
 						</div>
@@ -780,20 +782,19 @@
 					<div class="mainflip">
 						<div class="frontside">
 							<div class="card">
-								<img class="img-fluid" src="images/tioexample.PNG" alt="card image">
+								<img style=" width: 300px; height: 300px; " class=" img-fluid"
+									src="images/team/yeray.PNG" alt="card image">
 								<div class="card-body text-center">
-									<h4 class="card-title">Yeray Yeraco</h4>
-									<p class="card-text">Developer</p>
+									<h4 class="card-title">Yeray Sampedro</h4>
+									<p class="card-text">Desarrollador</p>
 								</div>
 							</div>
 						</div>
 						<div class="backside">
 							<div class="card">
 								<div class="card-body text-center mt-4">
-									<h4 class="card-title">Yeray Yeraco</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.This is basic card with image on top, title, description and button.This
-										is basic card with image on top, title, description and button.</p>
+									<h4 class="card-title">Yeray Sampedro</h4>
+									<p class="card-text">Desarrollador web de plataforma front end</p>
 								</div>
 							</div>
 						</div>
@@ -807,20 +808,19 @@
 					<div class="mainflip">
 						<div class="frontside">
 							<div class="card">
-								<img class="img-fluid" src="images/tioexample.PNG" alt="card image">
+								<img style=" width: 300px; height: 300px; " class="img-fluid" src="images/team/soki.PNG"
+									alt="card image">
 								<div class="card-body text-center">
-									<h4 class="card-title">Jaime MaravillariaYo</h4>
-									<p class="card-text">Graph Designer Boy</p>
+									<h4 class="card-title">Jaime Martinez</h4>
+									<p class="card-text">Diseñador de producto </p>
 								</div>
 							</div>
 						</div>
 						<div class="backside">
 							<div class="card">
 								<div class="card-body text-center mt-4">
-									<h4 class="card-title">Jaime PeroComoMeLasMaravillariaYo</h4>
-									<p class="card-text">This is basic card with image on top, title, description and
-										button.This is basic card with image on top, title, description and button.This
-										is basic card with image on top, title, description and button.</p>
+									<h4 class="card-title">Jaime Martinez</h4>
+									<p class="card-text">Diseñador de producto y artista colaborativo</p>
 
 								</div>
 							</div>
@@ -839,25 +839,25 @@
 
 	<!--Section: TEAM-->
 
-	<!-- Contact -->
+	<!-- Contact --
 	<section id="contact" class="main style3 secondary" style="padding: 0;">
 		<div class="content">
 			<header>
 				<h2>Say Hello.</h2>
 				<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
-				<a href="//www.dmca.com/Protection/Status.aspx?ID=364c8824-d095-4076-9586-fc0f2663f8eb"
-					title="DMCA.com Protection Status" class="dmca-badge"> <img
-						src="https://images.dmca.com/Badges/DMCA_logo-std-btn140w.png?ID=364c8824-d095-4076-9586-fc0f2663f8eb"
-						alt="DMCA.com Protection Status" /></a>
-				<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+				
 			</header>
 		</div>
 	</section>
-	<!--//Section: Contact-->
+	<--//Section: Contact-->
 
 	<!-- Footer -->
 	<footer id="footer">
-
+		<a href="//www.dmca.com/Protection/Status.aspx?ID=364c8824-d095-4076-9586-fc0f2663f8eb"
+			title="DMCA.com Protection Status" class="dmca-badge"> <img
+				src="https://images.dmca.com/Badges/DMCA_logo-std-btn140w.png?ID=364c8824-d095-4076-9586-fc0f2663f8eb"
+				alt="DMCA.com Protection Status" /></a>
+		<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
 		<!-- Icons -->
 		<ul class="icons">
 			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
