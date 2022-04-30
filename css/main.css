@@ -77,8 +77,8 @@
 	#timeline:before {
 		content: "";
 		width: 3px;
-		height: 100%;
-		background: #1C71A4;
+		height: 87%;
+		background: #ffff26;
 		left: 50%;
 		top: 0;
 		position: absolute;
