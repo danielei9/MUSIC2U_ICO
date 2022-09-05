@@ -6,45 +6,13 @@
     -moz-box-sizing: border-box;
 }
 
-body,
-html {
-    height: 100%;
-}
-
-body {
-    background: #f9f9f9;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    font-family: helvetica, arial, tahoma, verdana;
-    line-height: 20px;
-    font-size: 14px;
-    color: #726f77;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Dosis", arial, tahoma, verdana;
-    font-weight: 500;
-}
-
 .project-name {
     text-align: center;
     padding: 10px 0;
 }
 
 .success {
-    background: #78AD42 !important;
+    background: #ffff26  !important;
 }
 
 .timeline-container {
@@ -75,7 +43,7 @@ h4 {
     content: "";
     width: 3px;
     height: 100%;
-    background: #1C71A4;
+    background: #ffb34f;
     left: 50%;
     top: 0;
     position: absolute;
@@ -94,7 +62,7 @@ h4 {
 }
 
 #timeline .timeline-item .timeline-icon {
-    background: #1C71A4;
+    background: red;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -112,14 +80,14 @@ h4 {
 #timeline .timeline-item .timeline-icon .fa {
     position: relative;
     top: 13px;
-    left: 14px;
+    left: 11px;
     font-size: 24px;
-    color: #fff;
+    color: black;
 }
 
 #timeline .timeline-item .timeline-content {
     width: 45%;
-    background: #fff;
+    background: rgba(100, 100, 15, .55);
     padding: 20px;
     -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
@@ -133,13 +101,13 @@ h4 {
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-		text-align: center;
+    text-align: center;
 
 }
 
 #timeline .timeline-item .timeline-content h2 {
     padding: 15px;
-    background: #1C71A4;
+    box-shadow:  5px #fff, 0 0 10px #fff;
     color: #fff;
     margin: -20px -20px 0 -20px;
     font-weight: 300;
@@ -162,9 +130,9 @@ h4 {
     top: 20px;
     width: 0;
     height: 0;
-    border-top: 7px solid transparent;
+    /* border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid #1C71A4;
+    border-left: 7px solid red;*/
 }
 
 #timeline .timeline-item .timeline-content.right {
@@ -176,7 +144,7 @@ h4 {
     right: 45%;
     left: inherit;
     border-left: 0;
-    border-right: 7px solid #1C71A4;
+    border-right: 7px solid red;
 }
 
 
@@ -205,7 +173,7 @@ h4 {
         left: 10%;
         margin-left: -6px;
         border-left: 0;
-        border-right: 7px solid #1C71A4;
+        border-right: 7px solid red;
     }
 
     #timeline .timeline-item .timeline-icon {

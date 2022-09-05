@@ -54,6 +54,7 @@
 				}
 
 				.mainflip {
+					
 					-webkit-transition: 1s;
 					-webkit-transform-style: preserve-3d;
 					-ms-transition: 1s;
@@ -67,6 +68,7 @@
 				}
 
 				.frontside {
+					/*box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f6daa6, 0 0 25px #f6daa6 !important;*/
 					position: relative;
 					-webkit-transform: rotateY(0deg);
 					-ms-transform: rotateY(0deg);
@@ -75,6 +77,7 @@
 				}
 
 				.backside {
+					/*box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f6daa6, 0 0 25px #f6daa6 !important;*/
 					position: absolute;
 					top: 0;
 					left: 0;
